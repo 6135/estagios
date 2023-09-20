@@ -1,0 +1,98 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "DEI Grotesk";
+  src: url("/fonts/DEIGrotesk-Regular.otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "DEI Variable Light";
+  src: url("/fonts/DEIVariable-Light.otf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "DEI Variable Regular";
+  src: url("/fonts/DEIVariable-Regular.otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "DEI Variable SemiBold";
+  src: url("/fonts/DEIVariable-SemiBold.otf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "DEI Variable SemiLight";
+  src: url("/fonts/DEIVariable-SemiLight.otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "DEI Mixed";
+  src: url("/fonts/DEIMixed-Regular.otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "DEI linéale";
+  src: url("/fonts/DEIlineale-Regular.otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "DEI Variable GX";
+  src: url("/fonts/DEIVariableGX-Regular.ttf");
+  font-weight: 400;
+}
+:root {
+  --navbar-content-padding-value-left: calc(4% - 1%);
+  --navbar-content-padding-value-right: 1.5rem;
+  --name-hidden: block;
+}
+
+@media (max-width: 600px) {
+  :root {
+    --navbar-content-padding-value-left: calc(4% - 3%);
+  }
+}
+@media (max-width: 330px) {
+  :root {
+    --navbar-content-padding-value-left: calc(3% - 0.8%);
+  }
+}
+.navbar {
+  border-bottom: 2.2px solid #08a1e3;
+}
+.navbar .navbar-brand {
+  padding-bottom: 1rem;
+}
+
+.nav-link {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+  margin-left: calc(var(--bs-navbar-nav-link-padding-x) * 3);
+  margin-right: calc(var(--bs-navbar-nav-link-padding-x) * 3);
+}
+
+.dei-items {
+  font-family: "Inter";
+  font-size: 0.9rem;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  list-style-type: none;
+  font-weight: 600;
+}
+.dei-items .active {
+  border-bottom: 2.2px solid #08a1e3;
+}
+
+@media screen and (max-height: 720px) {
+  .navbar {
+    --bs-navbar-padding-y: calc(1rem - 1rem) !important;
+  }
+  .navbar.sticky-top {
+    position: relative !important;
+  }
+}
+@media screen and (max-width: 995px) {
+  .navbar {
+    --margin-shrunk-bottom: 0.7rem;
+    --margin-shrunk-sides: 1.5rem;
+    --name-hidden: none;
+  }
+}

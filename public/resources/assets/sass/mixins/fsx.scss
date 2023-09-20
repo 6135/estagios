@@ -1,0 +1,3 @@
+@mixin fs-x($value: 1, $unit: 'rem') {
+    #{"font-size"}: #{$value}#{$unit};
+}

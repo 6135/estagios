@@ -1,0 +1,66 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "DEI Grotesk";
+  src: url("/fonts/DEIGrotesk-Regular.otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "DEI Variable Light";
+  src: url("/fonts/DEIVariable-Light.otf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "DEI Variable Regular";
+  src: url("/fonts/DEIVariable-Regular.otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "DEI Variable SemiBold";
+  src: url("/fonts/DEIVariable-SemiBold.otf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "DEI Variable SemiLight";
+  src: url("/fonts/DEIVariable-SemiLight.otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "DEI Mixed";
+  src: url("/fonts/DEIMixed-Regular.otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "DEI linéale";
+  src: url("/fonts/DEIlineale-Regular.otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "DEI Variable GX";
+  src: url("/fonts/DEIVariableGX-Regular.ttf");
+  font-weight: 400;
+}
+.card.calendar-card-dei.no-border {
+  border: none;
+}
+.card.calendar-card-dei .card-body .card-title {
+  font-weight: 600;
+  line-height: 2rem;
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+}
+.card.calendar-card-dei .card-body .card-title.card-title-with-subtitle {
+  margin-bottom: 0;
+}
+.card.calendar-card-dei .card-body .card-subtitle {
+  margin-bottom: 3rem;
+}
+.card.calendar-card-dei .card-body.no-padding {
+  padding: 0;
+}
+.card.calendar-card-dei .card-body.contactos {
+  position: relative;
+}
+.card.calendar-card-dei .card-body.contactos .contact {
+  font-size: 0.9rem;
+  line-height: normal;
+}

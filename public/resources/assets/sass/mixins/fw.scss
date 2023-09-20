@@ -1,0 +1,13 @@
+@mixin fw($attr-count: 10, $attr-steps: 5, $unit: '', $attr-name: 'font-weight', $attr-prefix: 'fw-') {
+    $attr-list: null;
+
+    @for $i from 1 through $attr-count {
+        $attr-value: $attr-steps * $i;
+
+        .#{$attr-prefix}#{$attr-value} {
+            #{$attr-name}: #{$attr-value}#{$unit};
+        }
+
+        $attr-list: append($attr-list, unquote(".#{'font-weight'}-#{$attr-value}"), comma);
+    }
+}

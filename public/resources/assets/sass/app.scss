@@ -1,0 +1,469 @@
+@import "variables";
+@import "mixins/fw.scss";
+@import "mixins/fsx.scss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@include fw(80, 10, '', 'font-weight', 'fwd-');
+
+
+.font-size {
+    &-geral {
+        font-size: #{$font-size-geral};
+    }
+
+    &-base {
+        font-size: $font-size-base;
+    }
+
+    &-smallcaps {
+        font-size: $font-size-smallcaps;
+    }
+
+    &-181xl {
+        font-size: $font-size-181xl;
+    }
+
+    &-menu {
+        font-size: $font-size-menu;
+    }
+
+    &-xl {
+        font-size: $font-size-xl;
+    }
+
+    &-titulo {
+        font-size: $font-size-titulo;
+    }
+}
+
+
+.line-height-geral {
+    line-height: $line-height-geral;
+}
+
+.font-dei {
+    &-grotesk {
+        font-family: $font-dei-grotesk;
+    }
+
+    &-mixed {
+        font-family: $font-dei-mixed;
+    }
+
+    &-variable-sb {
+        font-family: $font-dei-variable-sb;
+    }
+
+    &-variable-sl {
+        font-family: $font-dei-variable-sl;
+    }
+
+    &-variable-light {
+        font-family: $font-dei-variable-light;
+    }
+
+    &-variable-reg {
+        font-family: $font-dei-variable-reg;
+    }
+
+    &-linale {
+        font-family: $font-dei-linale;
+    }
+
+    &-variable-gx {
+        font-family: $font-dei-variable-gx;
+    }
+}
+
+.font-inter {
+    font-family: $font-inter;
+}
+
+
+.fw-menu {
+    font-size: $font-size-menu;
+}
+
+:root {
+    --container-margin: #{$container-margin};
+    --container-padding: #{$container-padding};
+
+}
+
+.main-page {
+    // overflow-y: auto;
+    padding-top: 2.5rem;
+    box-sizing: border-box;
+    z-index: 0;
+    font-size: #{$font-size-geral};
+    font-family: #{$font-inter};
+    align-items: flex-start;
+    justify-content: flex-start;
+
+}
+
+p.home_page {
+    // width: calc(85% - $padding-value);
+    line-height: #{$line-height-geral};
+    font-size: #{$font-size-geral};
+}
+
+:root {
+    --font-size-base: #{$font-size-base};
+}
+
+
+// if min width smaller than 600px, increate $container-padding by 2%
+@media (max-width: 600px) {
+    :root {
+        --container-padding: calc(#{$container-padding} + 2%);
+        --font-size-base: 1rem;
+    }
+
+    .main-page {
+        font-size: 1.2rem;
+    }
+}
+
+
+//if smaller than 300px, increase $container-margin by 4%
+@media (max-width: 330px) {
+    :root {
+        --container-margin: calc(#{$container-margin} + 4%);
+
+    }
+}
+
+.required:after {
+    content: "*";
+    color: #{$primary};
+}
+
+.spaced-uppertext-dei {
+    font-family: $font-inter;
+    font-size: $font-size-small-base;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    list-style-type: none;
+    font-weight: 500;
+}
+
+.spaced-uppertext-dei-bigger {
+    font-family: $font-inter;
+    font-size: $font-size-base;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    list-style-type: none;
+    font-weight: 500;
+}
+
+.sub-header-text {
+    font-family: "Inter";
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    list-style-type: none;
+    font-weight: 600;
+
+    &-1 {
+        @extend .sub-header-text;
+        font-size: 1.3rem;
+    }
+
+    &-2 {
+        @extend .sub-header-text;
+        font-size: 1.2rem;
+    }
+
+    &-3 {
+        @extend .sub-header-text;
+        font-size: 1.1rem;
+    }
+
+    &-4 {
+        @extend .sub-header-text;
+        font-size: 1rem;
+    }
+
+    &-5 {
+        @extend .sub-header-text;
+        font-size: 0.9rem;
+    }
+
+    &-6 {
+        @extend .sub-header-text;
+        font-size: 0.8rem;
+    }
+
+    &-7 {
+        @extend .sub-header-text;
+        font-size: 0.7rem;
+    }
+
+    &-8 {
+        @extend .sub-header-text;
+        font-size: 0.6rem;
+    }
+
+    &-9 {
+        @extend .sub-header-text;
+        font-size: 0.5rem;
+    }
+
+    &-10 {
+        @extend .sub-header-text;
+        font-size: 0.4rem;
+    }
+
+    
+}
+
+
+
+.header-text {
+    font-family: "Inter";
+    font-weight: 600;
+
+    &-1 {
+        @extend .header-text;
+        font-size: 1.8rem;
+    }
+
+    &-2 {
+        @extend .header-text;
+        font-size: 1.7rem;
+    }
+
+    &-3 {
+        @extend .header-text;
+        font-size: 1.6rem;
+    }
+
+    &-4 {
+        @extend .header-text;
+        font-size: 1.5rem;
+    }
+
+    &-5 {
+        @extend .header-text;
+        font-size: 1.4rem;
+    }
+
+    &-6 {
+        @extend .header-text;
+        font-size: 1.3rem;
+    }
+
+    &-7 {
+        @extend .header-text;
+        font-size: 1.2rem;
+    }
+
+    &-8 {
+        @extend .header-text;
+        font-size: 1.1rem;
+    }
+
+    &-9 {
+        @extend .header-text;
+        font-size: 1rem;
+    }
+
+    &-10 {
+        @extend .header-text;
+        font-size: 0.9rem;
+    }
+}
+
+.body-text {
+    font-family: "Inter";
+    font-weight: 400;
+
+    &-1 {
+        @extend .body-text;
+        font-size: 1.2rem;
+    }
+
+    &-2 {
+        @extend .body-text;
+        font-size: 1.1rem;
+    }
+
+    &-3 {
+        @extend .body-text;
+        font-size: 1rem;
+    }
+
+    &-4 {
+        @extend .body-text;
+        font-size: 0.9rem;
+    }
+
+    &-5 {
+        @extend .body-text;
+        font-size: 0.8rem;
+    }
+}
+
+
+
+
+@import "./node_modules/bootstrap/scss/bootstrap";
+
+.is-invalid-dei {
+    @extend .is-invalid;
+    //set border top/left/right to 0
+    border-top: 0 !important;
+    border-left: 0 !important;
+    border-right: 0 !important;
+    border-radius: 0 !important;
+    //set background to none
+    background-image: none !important;
+
+    //on focus or hover set box-shadow: none !important;
+    &:focus,
+    &:hover {
+        box-shadow: none !important;
+    }
+}
+
+
+
+.is-invalid-button {
+    //set border top/left/right to 0
+    border-top: 0 !important;
+    border-left: 0 !important;
+    border-right: 0 !important;
+    border-radius: 0 !important;
+    //set bottom border to 2px solid red
+    border-bottom: 2px solid #{$danger} !important;
+
+    //on focus or hover set box-shadow: none !important;
+    &:focus,
+    &:hover {
+        box-shadow: none !important;
+    }
+}
+
+.btn {
+    &.form-btn-dei {
+        border-radius: 0% !important;
+        border: 2px solid #{$primary} !important;
+    }
+}
+
+.dei-full-border {
+    border-radius: 0;
+    border-top: 2px solid #{$primary};
+    border-left: 2px solid #{$primary};
+    border-right: 2px solid #{$primary};
+    border-bottom: 2px solid #{$primary};
+}
+
+.form-select--dei {
+    @extend .form-select;
+    border-radius: 0;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 2px solid #{$primary};
+    padding-left: 3px !important;
+
+    //on focus
+    &:focus {
+        // border-color: #{$primary};
+        border-bottom: 2px solid #{$primary};
+        box-shadow: none;
+        outline: none;
+    }
+
+    &.full-border {
+        border-radius: 0;
+        border-top: 2px solid #{$primary};
+        border-left: 2px solid #{$primary};
+        border-right: 2px solid #{$primary};
+        border-bottom: 2px solid #{$primary};
+    }
+
+    &.is-invalid {
+        border-radius: 0;
+        border-top: 2px solid #{$danger};
+        border-left: 2px solid #{$danger};
+        border-right: 2px solid #{$danger};
+        border-bottom: 2px solid #{$danger};
+    }
+
+    &.larger {
+        font-size: 1.2rem;
+    }
+}
+
+.form-control--dei {
+    @extend .form-control;
+    border-radius: 0;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 2px solid #{$primary};
+    padding-left: 3px !important;
+    padding-bottom: 0 !important;
+
+    //on focus
+    &:focus {
+        // border-color: #{$primary};
+        border-bottom: 2px solid #{$primary};
+        box-shadow: none;
+        outline: none;
+    }
+
+    &.full-border {
+        border-radius: 0;
+        border-top: 2px solid #{$primary};
+        border-left: 2px solid #{$primary};
+        border-right: 2px solid #{$primary};
+        border-bottom: 2px solid #{$primary};
+    }
+
+    &.is-invalid {
+        border-radius: 0;
+        border-top: 2px solid #{$danger};
+        border-left: 2px solid #{$danger};
+        border-right: 2px solid #{$danger};
+        border-bottom: 2px solid #{$danger};
+    }
+
+    &.is-valid {
+        border-radius: 0;
+        border-top: 2px solid #{$primary};
+        border-left: 2px solid #{$primary};
+        border-right: 2px solid #{$primary};
+        border-bottom: 2px solid #{$primary};
+    }
+
+    &.larger {
+        font-size: 1.2rem;
+    }
+
+    &.pb-1 {
+        padding-bottom: 0.5rem !important;
+    }
+
+    &.pb-2 {
+        padding-bottom: 1rem !important;
+    }
+
+    &.pb-3 {
+        padding-bottom: 1.5rem !important;
+    }
+}
+
+
+.form-label--dei {
+    @extend .form-label;
+    font-weight: 515;
+    font-style: italic;
+    color: #{$primary};
+    padding-left: 3px !important;
+    padding-top: 1.5rem !important;
+    //subtract 5px from bottom margin
+
+}

@@ -1,0 +1,32 @@
+<?php
+// resources/lang/pt/static.php
+return [
+    'curricular.data'       => 'Dados Curriculares',
+    'full.name'             => 'Nome Completo',
+    'short.name'            => 'Nome Curto',
+    'email'                 => 'Email',
+    'average.batchelor'     => 'Média de Licenciatura',
+    'average.master'        => 'Média de Mestrado',
+    'number'                => 'Número Aluno',
+    'phone'                 => 'Telefone',
+    'address'               => 'Morada',
+    'country'               => 'País',
+    'degree'                => 'Curso',
+    'select.country'        => 'Selecione o País',
+    'select.degree'         => 'Selecione o Curso',
+    'missing.subjects'      => 'Cadeiras em Falta',
+    'id'                    => 'Numero Documento de Identificação',
+    'select.id'             => 'Selecione o Documento de Identificação',
+    'id_validity'           => 'Validade do Documento de Identificação',
+    
+    'data.update.error' => 'Erro ao atualizar dados do aluno.',
+    'data.update.success' => 'Dados do aluno atualizados com sucesso.',
+    'data.error' => 'Erro ao obter dados do aluno.',
+    'data.success' => 'Dados do aluno obtidos com sucesso.',
+    'proposal.list.success' => 'Lista de propostas obtida com sucesso.',
+    'proposal.list.error' => 'Erro ao obter lista de propostas.',
+    'proposal.list.gte5' => 'Não pode escolher mais de 5 propostas.',
+    'proposal.list.lt5' => 'Tem de escolher 5 propostas.',
+    'proposal.list.reorder.same' => 'A ordem das propostas não foi alterada.',
+    'proposal.list.reorder.different' => 'Ao reordenar as propostas, estas têm de ser as mesmas que já tem.',
+];

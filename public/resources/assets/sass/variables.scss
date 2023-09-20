@@ -1,0 +1,90 @@
+
+$primary: #08a1e3;
+
+// $theme-colors: map-merge($theme-colors, (
+//   "primary": $primary
+// ));
+
+@font-face {
+    font-family: "DEI Grotesk";
+    src: url("/fonts/DEIGrotesk-Regular.otf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "DEI Variable Light";
+    src: url("/fonts/DEIVariable-Light.otf");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "DEI Variable Regular";
+    src: url("/fonts/DEIVariable-Regular.otf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "DEI Variable SemiBold";
+    src: url("/fonts/DEIVariable-SemiBold.otf");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "DEI Variable SemiLight";
+    src: url("/fonts/DEIVariable-SemiLight.otf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "DEI Mixed";
+    src: url("/fonts/DEIMixed-Regular.otf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "DEI linéale";
+    src: url("/fonts/DEIlineale-Regular.otf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "DEI Variable GX";
+    src: url("/fonts/DEIVariableGX-Regular.ttf");
+    font-weight: 400;
+}
+
+//fonts
+$font-inter: "Inter";
+$font-dei-variable-sb: "DEI Variable SemiBold";
+$font-dei-variable-light: "DEI Variable Light";
+$font-dei-variable-reg: "DEI Variable Regular";
+$font-dei-variable-sl: "DEI Variable SemiLight";
+$font-dei-mixed: "DEI Mixed";
+$font-dei-linale: "DEI linéale";
+$font-dei-grotesk: "DEI Grotesk";
+$font-dei-variable-gx: "DEI Variable GX";
+//font sizes
+$font-size-geral: 1.5rem;
+$line-height-geral: 2rem;
+$font-size-base: 0.9rem;
+$font-size-small-base: 0.7rem;
+$font-size-smallcaps: 1.2rem;
+$font-size-181xl: 12.5rem;
+$font-size-menu: 2.7rem;
+$font-size-xl: 1.25rem;
+$font-size-titulo: 2.2rem;
+//Gaps
+$gap-12xs: 0.06rem;
+$gap-3xs: 0.63rem;
+$gap-right-menu: 1.63rem;
+$container-margin: 3%;
+//Paddings 
+$padding-51xl: 4.38rem;
+$padding-value: 3rem;
+$padding-value-1: 2rem;
+$container-padding: 4%;
+//navbar
+$navbar-padding-y: 1.00rem;
+$navbar-content-padding-value: 3rem;
+$navbar-nav-link-margin-x: calc(var(--bs-navbar-nav-link-padding-x)*3);
+$form-floating-label-transform:   scale(.85) translateY(-.5rem) translateX(-.10rem);
